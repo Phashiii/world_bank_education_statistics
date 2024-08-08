@@ -1,0 +1,56 @@
+if 'data_loader' not in globals():
+    from mage_ai.data_preparation.decorators import data_loader
+if 'test' not in globals():
+    from mage_ai.data_preparation.decorators import test
+
+import requests
+import os
+import zipfile
+
+def download(url, download_path):
+    r = requests.get(url)
+    
+    with open(download, 'wb') as f:
+        f.write(r.content)
+def unzip(zip_file, unzipped_path):
+
+    with zipfile.ZipFile(zip_file, "r") as zip_ref:
+    zip_ref.extractall(unzipped_path)
+
+def clean_up(folder_path, zip_file):
+    for filename in os.listdir(folder_path):
+    file_path = os.path.join(folder_path, filename)
+    try:
+        if os.path.isfile(file_path) or os.path.islink(file_path):
+            os.unlink(file_path)
+        elif os.path.isdir(file_path):
+            for subfile in os.listdir(file_path):
+                subfile_path = os.path.join(file_path, subfile)
+                os.unlink(subfile_path)
+
+        if os.path.isfile(zip_file) or os.path.islink(zip_file):
+            os.unlink(zip_file)
+    except Exception as e:
+        print(f"Failed to delete {file_path}. Reason: {e}")
+    
+
+@data_loader
+def load_data(*args, **kwargs):
+   url = 'url = "https://databank.worldbank.org/data/download/EdStats_CSV.zip"'
+   download_path = 'ed_stats.zip'
+   data_folder = 'stats'
+   download(url, download_path)
+   unzip(download_path, data_folder)
+   file_name = 'EdStatsCountry.csv'
+   df = pd.read_csv(f'{data_folder}/{file_name}')
+   clean_up(data_folder, download_path)
+    return df
+
+
+@test
+def test_output(output, *args) -> None:
+    """
+    Template code for testing the output of the block.
+    """
+    assert output is not None, 'The output is undefined'
+
