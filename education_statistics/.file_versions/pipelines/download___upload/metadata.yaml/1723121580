@@ -18,36 +18,19 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks:
-  - export_to_gcs
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
   name: clean_columns
   retry_config: null
-  status: executed
+  status: not_executed
   timeout: null
   type: transformer
   upstream_blocks:
   - download_data
   uuid: clean_columns
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: export_to_gcs
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_exporter
-  upstream_blocks:
-  - clean_columns
-  uuid: export_to_gcs
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}

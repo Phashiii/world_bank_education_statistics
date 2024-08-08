@@ -6,7 +6,6 @@ if 'test' not in globals():
 import requests
 import os
 import zipfile
-import pandas as pd
 
 def download(url, download_path):
     r = requests.get(url)

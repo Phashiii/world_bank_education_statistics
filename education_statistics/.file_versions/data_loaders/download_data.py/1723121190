@@ -6,14 +6,13 @@ if 'test' not in globals():
 import requests
 import os
 import zipfile
-import pandas as pd
 
 def download(url, download_path):
     r = requests.get(url)
     
     with open(download_path, 'wb') as f:
         f.write(r.content)
-
+        
 def unzip(zip_file, unzipped_path):
 
     with zipfile.ZipFile(zip_file, "r") as zip_ref:
@@ -38,7 +37,7 @@ def clean_up(folder_path, zip_file):
 
 @data_loader
 def load_data(*args, **kwargs):
-    url = "https://databank.worldbank.org/data/download/EdStats_CSV.zip"
+    url = 'url = "https://databank.worldbank.org/data/download/EdStats_CSV.zip"'
     download_path = 'ed_stats.zip'
     data_folder = 'stats'
     download(url, download_path)
@@ -47,6 +46,7 @@ def load_data(*args, **kwargs):
     df = pd.read_csv(f'{data_folder}/{file_name}')
     clean_up(data_folder, download_path)
     return df
+
 
 @test
 def test_output(output, *args) -> None:
