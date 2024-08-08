@@ -1,2 +1,3 @@
 {"operation": "create", "resource": {"type": "pipeline", "uuid": "download_and_upload"}, "timestamp": 1723116962, "user": null}
 {"operation": "create", "resource": {"type": "pipeline", "uuid": "download___upload"}, "timestamp": 1723118879, "user": null}
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "gcs_to_bigq"}, "timestamp": 1723128569, "user": null}
