@@ -1,0 +1,1 @@
+{"_invocation_id": "6556f38c-5238-47c0-8d75-89b4227ac0d7", "linked": {"0": {"name": "source.education_statistics.staging.education_data", "type": "source", "succ": [1]}, "1": {"name": "model.education_statistics.test", "type": "model"}}}

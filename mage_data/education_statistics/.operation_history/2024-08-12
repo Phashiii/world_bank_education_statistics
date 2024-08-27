@@ -1,0 +1,1 @@
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "create_dbt_views"}, "timestamp": 1723467454, "user": null}

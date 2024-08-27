@@ -1,0 +1,804 @@
+[0m08:06:01.063165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d83944fc8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d83553039d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8355301480>]}
+
+
+============================== 08:06:01.067561 | c8952bc3-7e28-4c1a-8ba6-c999d3e4101e ==============================
+[0m08:06:01.067561 [info ] [MainThread]: Running with dbt=1.7.4
+[0m08:06:01.071428 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/src/education_statistics/.profiles_interpolated_temp_38611bc1-f392-4087-8f5b-027475b5d69d', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/src/education_statistics/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt start education_statistics', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:06:02.812251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c8952bc3-7e28-4c1a-8ba6-c999d3e4101e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d839480a050>]}
+[0m08:06:03.367262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c8952bc3-7e28-4c1a-8ba6-c999d3e4101e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d834b3cbf40>]}
+[0m08:06:03.371657 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m08:06:03.422861 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m08:06:03.425322 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:06:03.427887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c8952bc3-7e28-4c1a-8ba6-c999d3e4101e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d834b3c8ca0>]}
+[0m08:06:08.691060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8952bc3-7e28-4c1a-8ba6-c999d3e4101e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d834af84550>]}
+[0m08:06:08.729197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8952bc3-7e28-4c1a-8ba6-c999d3e4101e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d834af84a00>]}
+[0m08:06:08.731145 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m08:06:08.733619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8952bc3-7e28-4c1a-8ba6-c999d3e4101e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d834b5f3730>]}
+[0m08:06:08.737392 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 8.015093, "process_user_time": 53.622566, "process_kernel_time": 5.806952, "process_mem_max_rss": "491648", "process_in_blocks": "97008", "process_out_blocks": "3336"}
+[0m08:06:08.739654 [debug] [MainThread]: Command `cli list` succeeded at 08:06:08.739076 after 8.02 seconds
+[0m08:06:08.741225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d83944fc8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d834b13e470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d834b09d630>]}
+[0m08:06:08.742872 [debug] [MainThread]: Flushing usage events
+[0m08:08:42.342000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b8cb0550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08b68c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08b7910>]}
+
+
+============================== 08:08:42.349924 | 72177a3e-61b3-47a3-b769-52c3c5ebb41f ==============================
+[0m08:08:42.349924 [info ] [MainThread]: Running with dbt=1.7.4
+[0m08:08:42.357630 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/src/education_statistics/dbt/logs', 'debug': 'False', 'profiles_dir': '/home/src/education_statistics/.profiles_interpolated_temp_5e39b5d5-57dd-40ae-be34-19581a77ef3e', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt -f /tmp/tmppfo045rv.json', 'send_anonymous_usage_stats': 'True'}
+[0m08:08:47.009100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '72177a3e-61b3-47a3-b769-52c3c5ebb41f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b8f5be20>]}
+[0m08:08:47.845814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '72177a3e-61b3-47a3-b769-52c3c5ebb41f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1aa32a8f0>]}
+[0m08:08:47.850858 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m08:08:47.936275 [debug] [MainThread]: checksum: cf6f323af47e67e6ae264c5ff81bb1157f9066318caa79858b5ecca98c8e4121, vars: {'block_uuid': 'dbt/models/staging/test',
+ 'configuration': {'dbt_project_name': 'dbt',
+                   'file_path': 'dbt/models/staging/test.sql',
+                   'file_source': {'path': 'dbt/models/staging/test.sql',
+                                   'project_path': 'dbt'},
+                   'limit': 1000},
+ 'context': {},
+ 'env': 'dev',
+ 'event': {},
+ 'execution_date': '2024-08-27T08:08:07.855968',
+ 'interval_end_datetime': '2024-08-28T08:08:07.855968',
+ 'interval_start_datetime': '2024-08-27T08:08:07.855968',
+ 'pipeline_uuid': 'create_dbt_views',
+ 'repo_path': '/home/src/education_statistics'}, profile: , target: , version: 1.7.4
+[0m08:08:47.982227 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m08:08:47.989005 [debug] [MainThread]: previous checksum: cf6f323af47e67e6ae264c5ff81bb1157f9066318caa79858b5ecca98c8e4121, current checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc
+[0m08:08:47.992976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '72177a3e-61b3-47a3-b769-52c3c5ebb41f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1aa35c9a0>]}
+[0m08:08:57.793035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '72177a3e-61b3-47a3-b769-52c3c5ebb41f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1aa1068c0>]}
+[0m08:08:57.889928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '72177a3e-61b3-47a3-b769-52c3c5ebb41f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1aa07b670>]}
+[0m08:08:57.897019 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m08:08:57.916581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '72177a3e-61b3-47a3-b769-52c3c5ebb41f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1aa5905b0>]}
+[0m08:08:57.927325 [info ] [MainThread]: 
+[0m08:08:57.949187 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:08:57.959729 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_promptmebebe_dbt_dev_education_stats'
+[0m08:08:57.962759 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:09:09.868798 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: 'Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+  '
+[0m08:09:09.875863 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:09:09.878507 [debug] [MainThread]: Connection 'list_promptmebebe_dbt_dev_education_stats' was properly closed.
+[0m08:09:09.882116 [error] [MainThread]: Encountered an error:
+Database Error
+  Runtime Error
+    
+    dbt encountered an error while trying to read your profiles.yml file.
+    
+    Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+    
+[0m08:09:09.892800 [debug] [MainThread]: Resource report: {"command_name": "show", "command_wall_clock_time": 27.85567, "process_user_time": 42.801033, "process_kernel_time": 4.231712, "process_mem_max_rss": "347712", "process_in_blocks": "59536", "process_out_blocks": "2168", "command_success": false}
+[0m08:09:09.897016 [debug] [MainThread]: Command `cli show` failed at 08:09:09.895849 after 27.86 seconds
+[0m08:09:09.900984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b8cb0550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1aa104730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1aa104490>]}
+[0m08:09:09.904861 [debug] [MainThread]: Flushing usage events
+[0m08:21:41.217780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08b7a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08b5420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08b5ae0>]}
+
+
+============================== 08:21:41.221131 | f86855b5-929e-4cc1-ac01-e99206c48a8f ==============================
+[0m08:21:41.221131 [info ] [MainThread]: Running with dbt=1.7.4
+[0m08:21:41.229563 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/src/education_statistics/dbt/logs', 'debug': 'False', 'profiles_dir': '/home/src/education_statistics/.profiles_interpolated_temp_b6ae80ab-59f3-4abe-bd15-6912c609d3ca', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt -f /tmp/tmppfo045rv.json', 'send_anonymous_usage_stats': 'True'}
+[0m08:21:41.521272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f86855b5-929e-4cc1-ac01-e99206c48a8f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08b4d90>]}
+[0m08:21:41.535722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f86855b5-929e-4cc1-ac01-e99206c48a8f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b20a793970>]}
+[0m08:21:41.539407 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m08:21:41.599764 [debug] [MainThread]: checksum: d419ba8bcf148fcfb6153f21a9e3584de38a90771faf5e013a44b7d4ff1d09b4, vars: {'block_uuid': 'dbt/models/staging/test',
+ 'configuration': {'dbt_project_name': 'dbt',
+                   'file_path': 'dbt/models/staging/test.sql',
+                   'file_source': {'path': 'dbt/models/staging/test.sql',
+                                   'project_path': 'dbt'},
+                   'limit': 1000},
+ 'context': {},
+ 'env': 'dev',
+ 'event': {},
+ 'execution_date': '2024-08-27T08:21:40.830992',
+ 'interval_end_datetime': '2024-08-28T08:21:40.830992',
+ 'interval_start_datetime': '2024-08-27T08:21:40.830992',
+ 'pipeline_uuid': 'create_dbt_views',
+ 'repo_path': '/home/src/education_statistics'}, profile: , target: , version: 1.7.4
+[0m08:21:41.641732 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m08:21:41.649938 [debug] [MainThread]: previous checksum: d419ba8bcf148fcfb6153f21a9e3584de38a90771faf5e013a44b7d4ff1d09b4, current checksum: cf6f323af47e67e6ae264c5ff81bb1157f9066318caa79858b5ecca98c8e4121
+[0m08:21:41.656384 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m08:21:41.669602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f86855b5-929e-4cc1-ac01-e99206c48a8f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08b7850>]}
+[0m08:21:48.243195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f86855b5-929e-4cc1-ac01-e99206c48a8f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a9092a40>]}
+[0m08:21:48.292102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f86855b5-929e-4cc1-ac01-e99206c48a8f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1aa026740>]}
+[0m08:21:48.295915 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m08:21:48.309738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f86855b5-929e-4cc1-ac01-e99206c48a8f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1aa025240>]}
+[0m08:21:48.315865 [info ] [MainThread]: 
+[0m08:21:48.331247 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:21:48.340040 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_promptmebebe_dbt_dev_education_stats'
+[0m08:21:48.342714 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:21:50.948709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f86855b5-929e-4cc1-ac01-e99206c48a8f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b20a7cb2b0>]}
+[0m08:21:50.955295 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m08:21:50.964033 [info ] [MainThread]: 
+[0m08:21:50.998862 [debug] [Thread-6 (]: Began running node model.education_statistics.test
+[0m08:21:51.003582 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly list_promptmebebe_dbt_dev_education_stats, now model.education_statistics.test)
+[0m08:21:51.005553 [debug] [Thread-6 (]: Began compiling node model.education_statistics.test
+[0m08:21:51.022259 [debug] [Thread-6 (]: Writing injected SQL for node "model.education_statistics.test"
+[0m08:21:51.025691 [debug] [Thread-6 (]: Timing info for model.education_statistics.test (compile): 08:21:51.006710 => 08:21:51.024533
+[0m08:21:51.027511 [debug] [Thread-6 (]: Began executing node model.education_statistics.test
+[0m08:21:51.071869 [debug] [Thread-6 (]: Opening a new connection, currently in state closed
+[0m08:21:51.266797 [debug] [Thread-6 (]: On model.education_statistics.test: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "default", "target_name": "dev", "node_id": "model.education_statistics.test"} */
+
+  
+    select *
+    from (
+        select * from `promptmebebe`.`education_statistics`.`education_data` limit 100;
+    ) as model_limit_subq
+    limit 1000
+
+
+[0m08:21:53.301300 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=promptmebebe&j=bq:US:8655f73e-d27e-497b-b44e-e826cfb36ea2&page=queryresults
+[0m08:21:53.313431 [debug] [Thread-6 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got ";" at [6:87]')
+[0m08:21:54.528851 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=promptmebebe&j=bq:US:72508663-f22e-470f-8944-1e3399710fac&page=queryresults
+[0m08:21:54.534868 [error] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=promptmebebe&j=bq:US:72508663-f22e-470f-8944-1e3399710fac&page=queryresults
+[0m08:21:54.554264 [debug] [Thread-6 (]: Timing info for model.education_statistics.test (execute): 08:21:51.028695 => 08:21:54.552169
+[0m08:21:54.729080 [debug] [Thread-6 (]: Database Error in model test (models/staging/test.sql)
+  Syntax error: Expected ")" but got ";" at [6:87]
+[0m08:21:54.734787 [debug] [Thread-6 (]: Finished running node model.education_statistics.test
+[0m08:21:54.738502 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:21:54.741331 [debug] [MainThread]: Connection 'model.education_statistics.test' was properly closed.
+[0m08:21:54.743809 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database Error in model test (models/staging/test.sql)
+    Syntax error: Expected ")" but got ";" at [6:87]
+[0m08:21:54.751044 [debug] [MainThread]: Resource report: {"command_name": "show", "command_wall_clock_time": 13.54206, "process_user_time": 56.969364, "process_kernel_time": 6.918, "process_mem_max_rss": "372544", "process_in_blocks": "63112", "process_out_blocks": "4160", "command_success": false}
+[0m08:21:54.756106 [debug] [MainThread]: Command `cli show` failed at 08:21:54.755040 after 13.55 seconds
+[0m08:21:54.758970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08b7a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a9bb40d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a86ee740>]}
+[0m08:21:54.762148 [debug] [MainThread]: Flushing usage events
+[0m08:24:13.035452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b8c23c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08b6e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b20a7bb880>]}
+
+
+============================== 08:24:13.039047 | 12b3bfb2-7a57-4e41-8df9-8668d88854f0 ==============================
+[0m08:24:13.039047 [info ] [MainThread]: Running with dbt=1.7.4
+[0m08:24:13.048784 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/src/education_statistics/dbt/logs', 'debug': 'False', 'profiles_dir': '/home/src/education_statistics/.profiles_interpolated_temp_b43ebb2c-c2e3-441b-b956-b4d63daf1ae6', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt -f /tmp/tmppfo045rv.json', 'send_anonymous_usage_stats': 'True'}
+[0m08:24:13.217417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '12b3bfb2-7a57-4e41-8df9-8668d88854f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08b7d30>]}
+[0m08:24:13.223735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '12b3bfb2-7a57-4e41-8df9-8668d88854f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8509e70>]}
+[0m08:24:13.225938 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m08:24:13.275609 [debug] [MainThread]: checksum: 68143035b189d11ceba9316ad4b704696650cfad4c7222a8062c9a2172f1c0af, vars: {'block_uuid': 'dbt/models/staging/test',
+ 'configuration': {'dbt_project_name': 'dbt',
+                   'file_path': 'dbt/models/staging/test.sql',
+                   'file_source': {'path': 'dbt/models/staging/test.sql',
+                                   'project_path': 'dbt'},
+                   'limit': 1000},
+ 'context': {},
+ 'env': 'dev',
+ 'event': {},
+ 'execution_date': '2024-08-27T08:24:12.606349',
+ 'interval_end_datetime': '2024-08-28T08:24:12.606349',
+ 'interval_start_datetime': '2024-08-27T08:24:12.606349',
+ 'pipeline_uuid': 'create_dbt_views',
+ 'repo_path': '/home/src/education_statistics'}, profile: , target: , version: 1.7.4
+[0m08:24:13.318017 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m08:24:13.325800 [debug] [MainThread]: previous checksum: 68143035b189d11ceba9316ad4b704696650cfad4c7222a8062c9a2172f1c0af, current checksum: d419ba8bcf148fcfb6153f21a9e3584de38a90771faf5e013a44b7d4ff1d09b4
+[0m08:24:13.330231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '12b3bfb2-7a57-4e41-8df9-8668d88854f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b20a7bbac0>]}
+[0m08:24:19.785722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '12b3bfb2-7a57-4e41-8df9-8668d88854f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8372ef0>]}
+[0m08:24:19.843534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '12b3bfb2-7a57-4e41-8df9-8668d88854f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8373d90>]}
+[0m08:24:19.847016 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m08:24:19.859874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '12b3bfb2-7a57-4e41-8df9-8668d88854f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a850be50>]}
+[0m08:24:19.866780 [info ] [MainThread]: 
+[0m08:24:19.878853 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:24:19.889170 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_promptmebebe_dbt_dev_education_stats'
+[0m08:24:19.892040 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:24:21.894889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '12b3bfb2-7a57-4e41-8df9-8668d88854f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a83723b0>]}
+[0m08:24:21.900125 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m08:24:21.908860 [info ] [MainThread]: 
+[0m08:24:21.930397 [debug] [Thread-14 ]: Began running node model.education_statistics.test
+[0m08:24:21.938000 [debug] [Thread-14 ]: Re-using an available connection from the pool (formerly list_promptmebebe_dbt_dev_education_stats, now model.education_statistics.test)
+[0m08:24:21.941167 [debug] [Thread-14 ]: Began compiling node model.education_statistics.test
+[0m08:24:21.955649 [debug] [Thread-14 ]: Writing injected SQL for node "model.education_statistics.test"
+[0m08:24:21.959100 [debug] [Thread-14 ]: Timing info for model.education_statistics.test (compile): 08:24:21.943261 => 08:24:21.957543
+[0m08:24:21.961002 [debug] [Thread-14 ]: Began executing node model.education_statistics.test
+[0m08:24:21.978096 [debug] [Thread-14 ]: Opening a new connection, currently in state closed
+[0m08:24:22.137036 [debug] [Thread-14 ]: On model.education_statistics.test: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "default", "target_name": "dev", "node_id": "model.education_statistics.test"} */
+
+  
+    select *
+    from (
+        select * from `promptmebebe`.`education_statistics`.`education_data` limit 100
+    ) as model_limit_subq
+    limit 1000
+
+
+[0m08:24:24.142717 [debug] [Thread-14 ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=promptmebebe&j=bq:US:36225172-43c3-4f4e-af72-ba6e29c29d90&page=queryresults
+[0m08:24:25.746641 [debug] [Thread-14 ]: Timing info for model.education_statistics.test (execute): 08:24:21.962149 => 08:24:25.744387
+[0m08:24:25.753234 [debug] [Thread-14 ]: Finished running node model.education_statistics.test
+[0m08:24:25.760048 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:24:25.762932 [debug] [MainThread]: Connection 'model.education_statistics.test' was properly closed.
+[0m08:24:25.769356 [debug] [MainThread]: Command end result
+[0m08:24:25.840436 [info ] [MainThread]: Previewing node 'test':
+| country_code | short_name           | table_name           | long_name            | 2_alpha_code | currency_unit        | ... |
+| ------------ | -------------------- | -------------------- | -------------------- | ------------ | -------------------- | --- |
+| ARB          | Arab World           | Arab World           | Arab World           | 1A           |                      | ... |
+| EAP          | East Asia & Pacif... | East Asia & Pacific  | East Asia & Pacif... | 4E           |                      | ... |
+| EAS          | East Asia & Pacif... | East Asia & Pacif... | East Asia & Pacif... | Z4           |                      | ... |
+| ECA          | Europe & Central ... | Europe & Central ... | Europe & Central ... | 7E           |                      | ... |
+| ECS          | Europe & Central ... | Europe & Central ... | Europe & Central ... | Z7           |                      | ... |
+| EMU          | Euro area            | Euro area            | Euro area            | XC           |                      | ... |
+| EUU          | European Union       | European Union       | European Union       | EU           |                      | ... |
+| GIB          | Gibraltar            | Gibraltar            | Gibraltar            | GI           | Gibraltar pound      | ... |
+| HIC          | High income          | High income          | High income          | XD           |                      | ... |
+| HPC          | Heavily indebted ... | Heavily indebted ... | Heavily indebted ... | XE           |                      | ... |
+| LAC          | Latin America & C... | Latin America & C... | Latin America & C... | XJ           |                      | ... |
+| LCN          | Latin America & C... | Latin America & C... | Latin America & C... | ZJ           |                      | ... |
+| LDC          | Least developed c... | Least developed c... | Least developed c... | XL           |                      | ... |
+| LIC          | Low income           | Low income           | Low income           | XM           |                      | ... |
+| LMC          | Lower middle income  | Lower middle income  | Lower middle income  | XN           |                      | ... |
+| LMY          | Low & middle income  | Low & middle income  | Low & middle income  | XO           |                      | ... |
+| MEA          | Middle East & Nor... | Middle East & Nor... | Middle East & Nor... | ZQ           |                      | ... |
+| MIC          | Middle income        | Middle income        | Middle income        | XP           |                      | ... |
+| MNA          | Middle East & Nor... | Middle East & Nor... | Middle East & Nor... | XQ           |                      | ... |
+| NAC          | North America        | North America        | North America        | XU           |                      | ... |
+| NRU          | Nauru                | Nauru                | Nauru                | NR           |                      | ... |
+| OED          | OECD members         | OECD members         | OECD members         | OE           |                      | ... |
+| SAS          | South Asia           | South Asia           | South Asia           | 8S           |                      | ... |
+| SSA          | Sub-Saharan Afric... | Sub-Saharan Africa   | Sub-Saharan Afric... | ZF           |                      | ... |
+| SSF          | Sub-Saharan Afric... | Sub-Saharan Afric... | Sub-Saharan Afric... | ZG           |                      | ... |
+| UMC          | Upper middle income  | Upper middle income  | Upper middle income  | XT           |                      | ... |
+| WLD          | World                | World                | World                | 1W           |                      | ... |
+| AFG          | Afghanistan          | Afghanistan          | Islamic State of ... | AF           | Afghan afghani       | ... |
+| ERI          | Eritrea              | Eritrea              | State of Eritrea     | ER           | Eritrean nakfa       | ... |
+| HTI          | Haiti                | Haiti                | Republic of Haiti    | HT           | Haitian gourde       | ... |
+| MMR          | Myanmar              | Myanmar              | Republic of the U... | MM           | Myanmar kyat         | ... |
+| PRK          | Dem. People's Rep... | Korea, Dem. Rep.     | Democratic People... | KP           | Democratic People... | ... |
+| SOM          | Somalia              | Somalia              | Somali Democratic... | SO           | Somali shilling      | ... |
+| FSM          | Micronesia           | Micronesia, Fed. ... | Federated States ... | FM           | U.S. dollar          | ... |
+| GTM          | Guatemala            | Guatemala            | Republic of Guate... | GT           | Guatemalan quetzal   | ... |
+| GUY          | Guyana               | Guyana               | Co-operative Repu... | GY           | Guyana dollar        | ... |
+| HND          | Honduras             | Honduras             | Republic of Honduras | HN           | Honduran lempira     | ... |
+| KIR          | Kiribati             | Kiribati             | Republic of Kiribati | KI           | Australian dollar    | ... |
+| NIC          | Nicaragua            | Nicaragua            | Republic of Nicar... | NI           | Nicaraguan gold c... | ... |
+| PNG          | Papua New Guinea     | Papua New Guinea     | The Independent S... | PG           | Papua New Guinea ... | ... |
+| PSE          | West Bank and Gaza   | West Bank and Gaza   | West Bank and Gaza   | PS           | Israeli new shekel   | ... |
+| SLB          | Solomon Islands      | Solomon Islands      | Solomon Islands      | SB           | Solomon Islands d... | ... |
+| SLV          | El Salvador          | El Salvador          | Republic of El Sa... | SV           | U.S. dollar          | ... |
+| SSD          | South Sudan          | South Sudan          | Republic of South... | SS           | South Sudanese Pound | ... |
+| TLS          | Timor-Leste          | Timor-Leste          | Democratic Republ... | TL           | U.S. dollar          | ... |
+| UZB          | Uzbekistan           | Uzbekistan           | Republic of Uzbek... | UZ           | Uzbek sum            | ... |
+| VUT          | Vanuatu              | Vanuatu              | Republic of Vanuatu  | VU           | Vanuatu vatu         | ... |
+| WSM          | Samoa                | Samoa                | Samoa                | WS           | Samoan tala          | ... |
+| XKX          | Kosovo               | Kosovo               | Republic of Kosovo   |              | Euro                 | ... |
+| ASM          | American Samoa       | American Samoa       | American Samoa       | AS           | U.S. dollar          | ... |
+| BLZ          | Belize               | Belize               | Belize               | BZ           | Belize dollar        | ... |
+| CRI          | Costa Rica           | Costa Rica           | Republic of Costa... | CR           | Costa Rican colon    | ... |
+| CUB          | Cuba                 | Cuba                 | Republic of Cuba     | CU           | Cuban peso           | ... |
+| DMA          | Dominica             | Dominica             | Commonwealth of D... | DM           | East Caribbean do... | ... |
+| DOM          | Dominican Republic   | Dominican Republic   | Dominican Republic   | DO           | Dominican peso       | ... |
+| DZA          | Algeria              | Algeria              | People's Democrat... | DZ           | Algerian dinar       | ... |
+| GRD          | Grenada              | Grenada              | Grenada              | GD           | East Caribbean do... | ... |
+| JAM          | Jamaica              | Jamaica              | Jamaica              | JM           | Jamaican dollar      | ... |
+| LBY          | Libya                | Libya                | Socialist People'... | LY           | Libyan dinar         | ... |
+| LCA          | St. Lucia            | St. Lucia            | St. Lucia            | LC           | East Caribbean do... | ... |
+| MHL          | Marshall Islands     | Marshall Islands     | Republic of the M... | MH           | U.S. dollar          | ... |
+| PAN          | Panama               | Panama               | Republic of Panama   | PA           | Panamanian balboa    | ... |
+| PLW          | Palau                | Palau                | Republic of Palau    | PW           | U.S. dollar          | ... |
+| SUR          | Suriname             | Suriname             | Republic of Suriname | SR           | Suriname dollar      | ... |
+| SYC          | Seychelles           | Seychelles           | Republic of Seych... | SC           | Seychelles rupee     | ... |
+| TKM          | Turkmenistan         | Turkmenistan         | Turkmenistan         | TM           | New Turkmen manat    | ... |
+| TON          | Tonga                | Tonga                | Kingdom of Tonga     | TO           | Tongan pa'anga       | ... |
+| TUV          | Tuvalu               | Tuvalu               | Tuvalu               | TV           | Australian dollar    | ... |
+| VCT          | St. Vincent and t... | St. Vincent and t... | St. Vincent and t... | VC           | East Caribbean do... | ... |
+| ABW          | Aruba                | Aruba                | Aruba                | AW           | Aruban florin        | ... |
+| AND          | Andorra              | Andorra              | Principality of A... | AD           | Euro                 | ... |
+| ARE          | United Arab Emirates | United Arab Emirates | United Arab Emirates | AE           | U.A.E. dirham        | ... |
+| ATG          | Antigua and Barbuda  | Antigua and Barbuda  | Antigua and Barbuda  | AG           | East Caribbean do... | ... |
+| BHS          | The Bahamas          | Bahamas, The         | Commonwealth of T... | BS           | Bahamian dollar      | ... |
+| BMU          | Bermuda              | Bermuda              | The Bermudas         | BM           | Bermuda dollar       | ... |
+| BRB          | Barbados             | Barbados             | Barbados             | BB           | Barbados dollar      | ... |
+| CHI          | Channel Islands      | Channel Islands      | Channel Islands      |              | Pound sterling       | ... |
+| CUW          | Curaçao              | Curaçao              | Curaçao              | CW           | Netherlands Antil... | ... |
+| CYM          | Cayman Islands       | Cayman Islands       | Cayman Islands       | KY           | Cayman Islands do... | ... |
+| FRO          | Faeroe Islands       | Faeroe Islands       | Faeroe Islands       | FO           | Danish krone         | ... |
+| GRL          | Greenland            | Greenland            | Greenland            | GL           | Danish krone         | ... |
+| GUM          | Guam                 | Guam                 | Guam                 | GU           | U.S. dollar          | ... |
+| IMN          | Isle of Man          | Isle of Man          | Isle of Man          | IM           | Pound sterling       | ... |
+| KNA          | St. Kitts and Nevis  | St. Kitts and Nevis  | St. Kitts and Nevis  | KN           | East Caribbean do... | ... |
+| LIE          | Liechtenstein        | Liechtenstein        | Principality of L... | LI           | Swiss franc          | ... |
+| MAF          | St. Martin (Frenc... | St. Martin (Frenc... | St. Martin (Frenc... | MF           | Euro                 | ... |
+| MCO          | Monaco               | Monaco               | Principality of M... | MC           | Euro                 | ... |
+| MNP          | Northern Mariana ... | Northern Mariana ... | Commonwealth of t... | MP           | U.S. dollar          | ... |
+| NCL          | New Caledonia        | New Caledonia        | New Caledonia        | NC           | CFP franc            | ... |
+| PRI          | Puerto Rico          | Puerto Rico          | Puerto Rico          | PR           | U.S. dollar          | ... |
+| PYF          | French Polynesia     | French Polynesia     | French Polynesia     | PF           | CFP franc            | ... |
+| SMR          | San Marino           | San Marino           | Republic of San M... | SM           | Euro                 | ... |
+| SXM          | Sint Maarten (Dut... | Sint Maarten (Dut... | Sint Maarten (Dut... | SX           | Netherlands Antil... | ... |
+| TCA          | Turks and Caicos ... | Turks and Caicos ... | Turks and Caicos ... | TC           | U.S. dollar          | ... |
+| TTO          | Trinidad and Tobago  | Trinidad and Tobago  | Republic of Trini... | TT           | Trinidad and Toba... | ... |
+| VIR          | Virgin Islands       | Virgin Islands (U... | Virgin Islands of... | VI           | U.S. dollar          | ... |
+| BDI          | Burundi              | Burundi              | Republic of Burundi  | BI           | Burundi franc        | ... |
+| BEN          | Benin                | Benin                | Republic of Benin    | BJ           | CFA franc            | ... |
+| BFA          | Burkina Faso         | Burkina Faso         | Burkina Faso         | BF           | CFA franc            | ... |
+| BGD          | Bangladesh           | Bangladesh           | People's Republic... | BD           | Bangladeshi taka     | ... |
+
+[0m08:24:25.860161 [debug] [MainThread]: Resource report: {"command_name": "show", "command_success": true, "command_wall_clock_time": 12.836176, "process_user_time": 67.56739, "process_kernel_time": 8.374788, "process_mem_max_rss": "380736", "process_in_blocks": "63112", "process_out_blocks": "7032"}
+[0m08:24:25.864391 [debug] [MainThread]: Command `cli show` succeeded at 08:24:25.863314 after 12.84 seconds
+[0m08:24:25.868069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b8c23c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b20a7bb880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8207250>]}
+[0m08:24:25.873386 [debug] [MainThread]: Flushing usage events
+[0m08:28:58.126232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b8c23b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a83945e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b20a7bbe50>]}
+
+
+============================== 08:28:58.129189 | 0e37529c-526f-4514-891f-0e399735a7a9 ==============================
+[0m08:28:58.129189 [info ] [MainThread]: Running with dbt=1.7.4
+[0m08:28:58.139870 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/src/education_statistics/dbt/logs', 'debug': 'False', 'profiles_dir': '/home/src/education_statistics/.profiles_interpolated_temp_be1fa39f-19f9-4862-9ce6-9cb1a0be9384', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt -f /tmp/tmppfo045rv.json', 'send_anonymous_usage_stats': 'True'}
+[0m08:28:58.343627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0e37529c-526f-4514-891f-0e399735a7a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8394a00>]}
+[0m08:28:58.349002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0e37529c-526f-4514-891f-0e399735a7a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a86eece0>]}
+[0m08:28:58.350917 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m08:28:58.395171 [debug] [MainThread]: checksum: 8c7c17aa7d7045146bdf260cbf207bec34c949cd465619460102cf4a5cc95f19, vars: {'block_uuid': 'dbt/models/staging/test',
+ 'configuration': {'dbt_project_name': 'dbt',
+                   'file_path': 'dbt/models/staging/test.sql',
+                   'file_source': {'path': 'dbt/models/staging/test.sql',
+                                   'project_path': 'dbt'},
+                   'limit': 1000},
+ 'context': {},
+ 'env': 'dev',
+ 'event': {},
+ 'execution_date': '2024-08-27T08:28:57.801122',
+ 'interval_end_datetime': '2024-08-28T08:28:57.801122',
+ 'interval_start_datetime': '2024-08-27T08:28:57.801122',
+ 'pipeline_uuid': 'create_dbt_views',
+ 'repo_path': '/home/src/education_statistics'}, profile: , target: , version: 1.7.4
+[0m08:28:58.440180 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m08:28:58.450348 [debug] [MainThread]: previous checksum: 8c7c17aa7d7045146bdf260cbf207bec34c949cd465619460102cf4a5cc95f19, current checksum: 68143035b189d11ceba9316ad4b704696650cfad4c7222a8062c9a2172f1c0af
+[0m08:28:58.454045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0e37529c-526f-4514-891f-0e399735a7a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a86eded0>]}
+[0m08:29:04.935053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0e37529c-526f-4514-891f-0e399735a7a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8161000>]}
+[0m08:29:05.005085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0e37529c-526f-4514-891f-0e399735a7a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8160c40>]}
+[0m08:29:05.008629 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m08:29:05.020658 [info ] [MainThread]: 
+[0m08:29:05.033351 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:29:05.048541 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_promptmebebe'
+[0m08:29:05.051896 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:29:07.084730 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_promptmebebe, now create_promptmebebe_dbt_dev_education_stats)
+[0m08:29:07.090796 [debug] [ThreadPool]: Creating schema "database: "promptmebebe"
+schema: "dbt_dev_education_stats"
+"
+[0m08:29:07.175965 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:29:07.382362 [debug] [ThreadPool]: On create_promptmebebe_dbt_dev_education_stats: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "default", "target_name": "dev", "connection_name": "create_promptmebebe_dbt_dev_education_stats"} */
+create schema if not exists `promptmebebe`.`dbt_dev_education_stats`
+  
+[0m08:29:09.437028 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=promptmebebe&j=bq:US:b73b4054-96e2-4589-83c4-685d0ac16bbe&page=queryresults
+[0m08:29:10.820030 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_promptmebebe_dbt_dev_education_stats, now list_promptmebebe_dbt_dev_education_stats)
+[0m08:29:10.823264 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:29:12.823258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0e37529c-526f-4514-891f-0e399735a7a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a811b790>]}
+[0m08:29:12.829261 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m08:29:12.838375 [info ] [MainThread]: 
+[0m08:29:12.865894 [debug] [Thread-22 ]: Began running node model.education_statistics.test
+[0m08:29:12.871041 [info ] [Thread-22 ]: 1 of 1 START sql view model dbt_dev_education_stats.test ....................... [RUN]
+[0m08:29:12.888445 [debug] [Thread-22 ]: Re-using an available connection from the pool (formerly list_promptmebebe_dbt_dev_education_stats, now model.education_statistics.test)
+[0m08:29:12.892426 [debug] [Thread-22 ]: Began compiling node model.education_statistics.test
+[0m08:29:12.921021 [debug] [Thread-22 ]: Writing injected SQL for node "model.education_statistics.test"
+[0m08:29:12.924108 [debug] [Thread-22 ]: Timing info for model.education_statistics.test (compile): 08:29:12.895859 => 08:29:12.922956
+[0m08:29:12.925975 [debug] [Thread-22 ]: Began executing node model.education_statistics.test
+[0m08:29:13.052972 [debug] [Thread-22 ]: Writing runtime sql for node "model.education_statistics.test"
+[0m08:29:13.056387 [debug] [Thread-22 ]: Opening a new connection, currently in state closed
+[0m08:29:13.205101 [debug] [Thread-22 ]: On model.education_statistics.test: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "default", "target_name": "dev", "node_id": "model.education_statistics.test"} */
+
+
+  create or replace view `promptmebebe`.`dbt_dev_education_stats`.`test`
+  OPTIONS()
+  as select * from `promptmebebe`.`education_statistics`.`education_data` limit 100;
+
+
+[0m08:29:15.170830 [debug] [Thread-22 ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=promptmebebe&j=bq:US:4af63195-1d06-46bf-bba0-272ba70d3f5e&page=queryresults
+[0m08:29:16.325445 [debug] [Thread-22 ]: Timing info for model.education_statistics.test (execute): 08:29:12.927427 => 08:29:16.323497
+[0m08:29:16.332286 [debug] [Thread-22 ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0e37529c-526f-4514-891f-0e399735a7a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a81e44c0>]}
+[0m08:29:16.337143 [info ] [Thread-22 ]: 1 of 1 OK created sql view model dbt_dev_education_stats.test .................. [[32mCREATE VIEW (0 processed)[0m in 3.45s]
+[0m08:29:16.350882 [debug] [Thread-22 ]: Finished running node model.education_statistics.test
+[0m08:29:16.368264 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:29:16.370318 [debug] [MainThread]: Connection 'model.education_statistics.test' was properly closed.
+[0m08:29:16.373036 [info ] [MainThread]: 
+[0m08:29:16.380895 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 11.34 seconds (11.34s).
+[0m08:29:16.397767 [debug] [MainThread]: Command end result
+[0m08:29:16.436817 [info ] [MainThread]: 
+[0m08:29:16.445469 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:29:16.459636 [info ] [MainThread]: 
+[0m08:29:16.471649 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m08:29:16.480748 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 18.362522, "process_user_time": 79.0999, "process_kernel_time": 10.706771, "process_mem_max_rss": "397120", "process_in_blocks": "64160", "process_out_blocks": "10360"}
+[0m08:29:16.485451 [debug] [MainThread]: Command `cli build` succeeded at 08:29:16.484340 after 18.37 seconds
+[0m08:29:16.492810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b8c23b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a84625f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a82c72b0>]}
+[0m08:29:16.496981 [debug] [MainThread]: Flushing usage events
+[0m08:29:17.962823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1f453bfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8394eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8394760>]}
+
+
+============================== 08:29:17.964852 | 1e155f57-5c8e-433b-ab3b-225b5b1616b3 ==============================
+[0m08:29:17.964852 [info ] [MainThread]: Running with dbt=1.7.4
+[0m08:29:17.975456 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/src/education_statistics/dbt/logs', 'debug': 'False', 'profiles_dir': '/home/src/education_statistics/.profiles_interpolated_temp_be1fa39f-19f9-4862-9ce6-9cb1a0be9384', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt -f /tmp/tmppfo045rv.json', 'send_anonymous_usage_stats': 'True'}
+[0m08:29:18.186660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1e155f57-5c8e-433b-ab3b-225b5b1616b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a86edb70>]}
+[0m08:29:18.193220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1e155f57-5c8e-433b-ab3b-225b5b1616b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a81e3520>]}
+[0m08:29:18.195395 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m08:29:18.247318 [debug] [MainThread]: checksum: 8c7c17aa7d7045146bdf260cbf207bec34c949cd465619460102cf4a5cc95f19, vars: {'block_uuid': 'dbt/models/staging/test',
+ 'configuration': {'dbt_project_name': 'dbt',
+                   'file_path': 'dbt/models/staging/test.sql',
+                   'file_source': {'path': 'dbt/models/staging/test.sql',
+                                   'project_path': 'dbt'},
+                   'limit': 1000},
+ 'context': {},
+ 'env': 'dev',
+ 'event': {},
+ 'execution_date': '2024-08-27T08:28:57.801122',
+ 'interval_end_datetime': '2024-08-28T08:28:57.801122',
+ 'interval_start_datetime': '2024-08-27T08:28:57.801122',
+ 'pipeline_uuid': 'create_dbt_views',
+ 'repo_path': '/home/src/education_statistics'}, profile: , target: , version: 1.7.4
+[0m08:29:18.409187 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:29:18.410800 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:29:18.442795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1e155f57-5c8e-433b-ab3b-225b5b1616b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19ff87eb0>]}
+[0m08:29:18.481455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1e155f57-5c8e-433b-ab3b-225b5b1616b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19ff564d0>]}
+[0m08:29:18.484159 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m08:29:18.496528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e155f57-5c8e-433b-ab3b-225b5b1616b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19ff56290>]}
+[0m08:29:18.502197 [info ] [MainThread]: 
+[0m08:29:18.512095 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:29:18.520809 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_promptmebebe_dbt_dev_education_stats'
+[0m08:29:18.523931 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:29:20.397148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e155f57-5c8e-433b-ab3b-225b5b1616b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19ff55780>]}
+[0m08:29:20.401943 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m08:29:20.410759 [info ] [MainThread]: 
+[0m08:29:20.430692 [debug] [Thread-29 ]: Began running node model.education_statistics.test
+[0m08:29:20.437173 [debug] [Thread-29 ]: Re-using an available connection from the pool (formerly list_promptmebebe_dbt_dev_education_stats, now model.education_statistics.test)
+[0m08:29:20.439459 [debug] [Thread-29 ]: Began compiling node model.education_statistics.test
+[0m08:29:20.456783 [debug] [Thread-29 ]: Writing injected SQL for node "model.education_statistics.test"
+[0m08:29:20.463081 [debug] [Thread-29 ]: Timing info for model.education_statistics.test (compile): 08:29:20.440777 => 08:29:20.460111
+[0m08:29:20.466892 [debug] [Thread-29 ]: Began executing node model.education_statistics.test
+[0m08:29:20.489614 [debug] [Thread-29 ]: Opening a new connection, currently in state closed
+[0m08:29:20.651932 [debug] [Thread-29 ]: On model.education_statistics.test: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "default", "target_name": "dev", "node_id": "model.education_statistics.test"} */
+
+  
+    select *
+    from (
+        select * from `promptmebebe`.`education_statistics`.`education_data` limit 100
+    ) as model_limit_subq
+    limit 1000
+
+
+[0m08:29:22.646655 [debug] [Thread-29 ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=promptmebebe&j=bq:US:c09f64db-7169-4bbe-b3d1-29e00f136536&page=queryresults
+[0m08:29:24.184144 [debug] [Thread-29 ]: Timing info for model.education_statistics.test (execute): 08:29:20.469027 => 08:29:24.182143
+[0m08:29:24.192658 [debug] [Thread-29 ]: Finished running node model.education_statistics.test
+[0m08:29:24.198842 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:29:24.201662 [debug] [MainThread]: Connection 'model.education_statistics.test' was properly closed.
+[0m08:29:24.207794 [debug] [MainThread]: Command end result
+[0m08:29:24.287856 [info ] [MainThread]: Previewing node 'test':
+| country_code | short_name           | table_name           | long_name            | 2_alpha_code | currency_unit        | ... |
+| ------------ | -------------------- | -------------------- | -------------------- | ------------ | -------------------- | --- |
+| ARB          | Arab World           | Arab World           | Arab World           | 1A           |                      | ... |
+| EAP          | East Asia & Pacif... | East Asia & Pacific  | East Asia & Pacif... | 4E           |                      | ... |
+| EAS          | East Asia & Pacif... | East Asia & Pacif... | East Asia & Pacif... | Z4           |                      | ... |
+| ECA          | Europe & Central ... | Europe & Central ... | Europe & Central ... | 7E           |                      | ... |
+| ECS          | Europe & Central ... | Europe & Central ... | Europe & Central ... | Z7           |                      | ... |
+| EMU          | Euro area            | Euro area            | Euro area            | XC           |                      | ... |
+| EUU          | European Union       | European Union       | European Union       | EU           |                      | ... |
+| GIB          | Gibraltar            | Gibraltar            | Gibraltar            | GI           | Gibraltar pound      | ... |
+| HIC          | High income          | High income          | High income          | XD           |                      | ... |
+| HPC          | Heavily indebted ... | Heavily indebted ... | Heavily indebted ... | XE           |                      | ... |
+| LAC          | Latin America & C... | Latin America & C... | Latin America & C... | XJ           |                      | ... |
+| LCN          | Latin America & C... | Latin America & C... | Latin America & C... | ZJ           |                      | ... |
+| LDC          | Least developed c... | Least developed c... | Least developed c... | XL           |                      | ... |
+| LIC          | Low income           | Low income           | Low income           | XM           |                      | ... |
+| LMC          | Lower middle income  | Lower middle income  | Lower middle income  | XN           |                      | ... |
+| LMY          | Low & middle income  | Low & middle income  | Low & middle income  | XO           |                      | ... |
+| MEA          | Middle East & Nor... | Middle East & Nor... | Middle East & Nor... | ZQ           |                      | ... |
+| MIC          | Middle income        | Middle income        | Middle income        | XP           |                      | ... |
+| MNA          | Middle East & Nor... | Middle East & Nor... | Middle East & Nor... | XQ           |                      | ... |
+| NAC          | North America        | North America        | North America        | XU           |                      | ... |
+| NRU          | Nauru                | Nauru                | Nauru                | NR           |                      | ... |
+| OED          | OECD members         | OECD members         | OECD members         | OE           |                      | ... |
+| SAS          | South Asia           | South Asia           | South Asia           | 8S           |                      | ... |
+| SSA          | Sub-Saharan Afric... | Sub-Saharan Africa   | Sub-Saharan Afric... | ZF           |                      | ... |
+| SSF          | Sub-Saharan Afric... | Sub-Saharan Afric... | Sub-Saharan Afric... | ZG           |                      | ... |
+| UMC          | Upper middle income  | Upper middle income  | Upper middle income  | XT           |                      | ... |
+| WLD          | World                | World                | World                | 1W           |                      | ... |
+| AFG          | Afghanistan          | Afghanistan          | Islamic State of ... | AF           | Afghan afghani       | ... |
+| ERI          | Eritrea              | Eritrea              | State of Eritrea     | ER           | Eritrean nakfa       | ... |
+| HTI          | Haiti                | Haiti                | Republic of Haiti    | HT           | Haitian gourde       | ... |
+| MMR          | Myanmar              | Myanmar              | Republic of the U... | MM           | Myanmar kyat         | ... |
+| PRK          | Dem. People's Rep... | Korea, Dem. Rep.     | Democratic People... | KP           | Democratic People... | ... |
+| SOM          | Somalia              | Somalia              | Somali Democratic... | SO           | Somali shilling      | ... |
+| FSM          | Micronesia           | Micronesia, Fed. ... | Federated States ... | FM           | U.S. dollar          | ... |
+| GTM          | Guatemala            | Guatemala            | Republic of Guate... | GT           | Guatemalan quetzal   | ... |
+| GUY          | Guyana               | Guyana               | Co-operative Repu... | GY           | Guyana dollar        | ... |
+| HND          | Honduras             | Honduras             | Republic of Honduras | HN           | Honduran lempira     | ... |
+| KIR          | Kiribati             | Kiribati             | Republic of Kiribati | KI           | Australian dollar    | ... |
+| NIC          | Nicaragua            | Nicaragua            | Republic of Nicar... | NI           | Nicaraguan gold c... | ... |
+| PNG          | Papua New Guinea     | Papua New Guinea     | The Independent S... | PG           | Papua New Guinea ... | ... |
+| PSE          | West Bank and Gaza   | West Bank and Gaza   | West Bank and Gaza   | PS           | Israeli new shekel   | ... |
+| SLB          | Solomon Islands      | Solomon Islands      | Solomon Islands      | SB           | Solomon Islands d... | ... |
+| SLV          | El Salvador          | El Salvador          | Republic of El Sa... | SV           | U.S. dollar          | ... |
+| SSD          | South Sudan          | South Sudan          | Republic of South... | SS           | South Sudanese Pound | ... |
+| TLS          | Timor-Leste          | Timor-Leste          | Democratic Republ... | TL           | U.S. dollar          | ... |
+| UZB          | Uzbekistan           | Uzbekistan           | Republic of Uzbek... | UZ           | Uzbek sum            | ... |
+| VUT          | Vanuatu              | Vanuatu              | Republic of Vanuatu  | VU           | Vanuatu vatu         | ... |
+| WSM          | Samoa                | Samoa                | Samoa                | WS           | Samoan tala          | ... |
+| XKX          | Kosovo               | Kosovo               | Republic of Kosovo   |              | Euro                 | ... |
+| ASM          | American Samoa       | American Samoa       | American Samoa       | AS           | U.S. dollar          | ... |
+| BLZ          | Belize               | Belize               | Belize               | BZ           | Belize dollar        | ... |
+| CRI          | Costa Rica           | Costa Rica           | Republic of Costa... | CR           | Costa Rican colon    | ... |
+| CUB          | Cuba                 | Cuba                 | Republic of Cuba     | CU           | Cuban peso           | ... |
+| DMA          | Dominica             | Dominica             | Commonwealth of D... | DM           | East Caribbean do... | ... |
+| DOM          | Dominican Republic   | Dominican Republic   | Dominican Republic   | DO           | Dominican peso       | ... |
+| DZA          | Algeria              | Algeria              | People's Democrat... | DZ           | Algerian dinar       | ... |
+| GRD          | Grenada              | Grenada              | Grenada              | GD           | East Caribbean do... | ... |
+| JAM          | Jamaica              | Jamaica              | Jamaica              | JM           | Jamaican dollar      | ... |
+| LBY          | Libya                | Libya                | Socialist People'... | LY           | Libyan dinar         | ... |
+| LCA          | St. Lucia            | St. Lucia            | St. Lucia            | LC           | East Caribbean do... | ... |
+| MHL          | Marshall Islands     | Marshall Islands     | Republic of the M... | MH           | U.S. dollar          | ... |
+| PAN          | Panama               | Panama               | Republic of Panama   | PA           | Panamanian balboa    | ... |
+| PLW          | Palau                | Palau                | Republic of Palau    | PW           | U.S. dollar          | ... |
+| SUR          | Suriname             | Suriname             | Republic of Suriname | SR           | Suriname dollar      | ... |
+| SYC          | Seychelles           | Seychelles           | Republic of Seych... | SC           | Seychelles rupee     | ... |
+| TKM          | Turkmenistan         | Turkmenistan         | Turkmenistan         | TM           | New Turkmen manat    | ... |
+| TON          | Tonga                | Tonga                | Kingdom of Tonga     | TO           | Tongan pa'anga       | ... |
+| TUV          | Tuvalu               | Tuvalu               | Tuvalu               | TV           | Australian dollar    | ... |
+| VCT          | St. Vincent and t... | St. Vincent and t... | St. Vincent and t... | VC           | East Caribbean do... | ... |
+| ABW          | Aruba                | Aruba                | Aruba                | AW           | Aruban florin        | ... |
+| AND          | Andorra              | Andorra              | Principality of A... | AD           | Euro                 | ... |
+| ARE          | United Arab Emirates | United Arab Emirates | United Arab Emirates | AE           | U.A.E. dirham        | ... |
+| ATG          | Antigua and Barbuda  | Antigua and Barbuda  | Antigua and Barbuda  | AG           | East Caribbean do... | ... |
+| BHS          | The Bahamas          | Bahamas, The         | Commonwealth of T... | BS           | Bahamian dollar      | ... |
+| BMU          | Bermuda              | Bermuda              | The Bermudas         | BM           | Bermuda dollar       | ... |
+| BRB          | Barbados             | Barbados             | Barbados             | BB           | Barbados dollar      | ... |
+| CHI          | Channel Islands      | Channel Islands      | Channel Islands      |              | Pound sterling       | ... |
+| CUW          | Curaçao              | Curaçao              | Curaçao              | CW           | Netherlands Antil... | ... |
+| CYM          | Cayman Islands       | Cayman Islands       | Cayman Islands       | KY           | Cayman Islands do... | ... |
+| FRO          | Faeroe Islands       | Faeroe Islands       | Faeroe Islands       | FO           | Danish krone         | ... |
+| GRL          | Greenland            | Greenland            | Greenland            | GL           | Danish krone         | ... |
+| GUM          | Guam                 | Guam                 | Guam                 | GU           | U.S. dollar          | ... |
+| IMN          | Isle of Man          | Isle of Man          | Isle of Man          | IM           | Pound sterling       | ... |
+| KNA          | St. Kitts and Nevis  | St. Kitts and Nevis  | St. Kitts and Nevis  | KN           | East Caribbean do... | ... |
+| LIE          | Liechtenstein        | Liechtenstein        | Principality of L... | LI           | Swiss franc          | ... |
+| MAF          | St. Martin (Frenc... | St. Martin (Frenc... | St. Martin (Frenc... | MF           | Euro                 | ... |
+| MCO          | Monaco               | Monaco               | Principality of M... | MC           | Euro                 | ... |
+| MNP          | Northern Mariana ... | Northern Mariana ... | Commonwealth of t... | MP           | U.S. dollar          | ... |
+| NCL          | New Caledonia        | New Caledonia        | New Caledonia        | NC           | CFP franc            | ... |
+| PRI          | Puerto Rico          | Puerto Rico          | Puerto Rico          | PR           | U.S. dollar          | ... |
+| PYF          | French Polynesia     | French Polynesia     | French Polynesia     | PF           | CFP franc            | ... |
+| SMR          | San Marino           | San Marino           | Republic of San M... | SM           | Euro                 | ... |
+| SXM          | Sint Maarten (Dut... | Sint Maarten (Dut... | Sint Maarten (Dut... | SX           | Netherlands Antil... | ... |
+| TCA          | Turks and Caicos ... | Turks and Caicos ... | Turks and Caicos ... | TC           | U.S. dollar          | ... |
+| TTO          | Trinidad and Tobago  | Trinidad and Tobago  | Republic of Trini... | TT           | Trinidad and Toba... | ... |
+| VIR          | Virgin Islands       | Virgin Islands (U... | Virgin Islands of... | VI           | U.S. dollar          | ... |
+| BDI          | Burundi              | Burundi              | Republic of Burundi  | BI           | Burundi franc        | ... |
+| BEN          | Benin                | Benin                | Republic of Benin    | BJ           | CFA franc            | ... |
+| BFA          | Burkina Faso         | Burkina Faso         | Burkina Faso         | BF           | CFA franc            | ... |
+| BGD          | Bangladesh           | Bangladesh           | People's Republic... | BD           | Bangladeshi taka     | ... |
+
+[0m08:29:24.314566 [debug] [MainThread]: Resource report: {"command_name": "show", "command_success": true, "command_wall_clock_time": 6.3572226, "process_user_time": 81.12265, "process_kernel_time": 10.894988, "process_mem_max_rss": "398400", "process_in_blocks": "64160", "process_out_blocks": "12168"}
+[0m08:29:24.323800 [debug] [MainThread]: Command `cli show` succeeded at 08:29:24.322659 after 6.37 seconds
+[0m08:29:24.326974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1f453bfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a81e3520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a80c8850>]}
+[0m08:29:24.330694 [debug] [MainThread]: Flushing usage events
+[0m08:32:00.201114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a80c87f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a80c8c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a80c8940>]}
+
+
+============================== 08:32:00.203198 | 9719d302-1f52-4a9b-98a6-b0e2829f2b28 ==============================
+[0m08:32:00.203198 [info ] [MainThread]: Running with dbt=1.7.4
+[0m08:32:00.210183 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/src/education_statistics/dbt/logs', 'debug': 'False', 'profiles_dir': '/home/src/education_statistics/.profiles_interpolated_temp_2dde963a-3d90-46f7-862b-db3f0d689e81', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt -f /tmp/tmppfo045rv.json', 'send_anonymous_usage_stats': 'True'}
+[0m08:32:00.407257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9719d302-1f52-4a9b-98a6-b0e2829f2b28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8160df0>]}
+[0m08:32:00.414815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9719d302-1f52-4a9b-98a6-b0e2829f2b28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a80c9060>]}
+[0m08:32:00.417560 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m08:32:00.472494 [debug] [MainThread]: checksum: 9f6af2ab1c5da8ade253fe5b6dd6c033eae90c8a915432c98e9b50125197993e, vars: {'block_uuid': 'dbt/models/staging/test',
+ 'configuration': {'dbt_project_name': 'dbt',
+                   'file_path': 'dbt/models/staging/test.sql',
+                   'file_source': {'path': 'dbt/models/staging/test.sql',
+                                   'project_path': 'dbt'},
+                   'limit': 1000},
+ 'context': {},
+ 'env': 'dev',
+ 'event': {},
+ 'execution_date': '2024-08-27T08:31:59.856793',
+ 'interval_end_datetime': '2024-08-28T08:31:59.856793',
+ 'interval_start_datetime': '2024-08-27T08:31:59.856793',
+ 'pipeline_uuid': 'create_dbt_views',
+ 'repo_path': '/home/src/education_statistics'}, profile: , target: , version: 1.7.4
+[0m08:32:00.507662 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m08:32:00.516999 [debug] [MainThread]: previous checksum: 9f6af2ab1c5da8ade253fe5b6dd6c033eae90c8a915432c98e9b50125197993e, current checksum: 8c7c17aa7d7045146bdf260cbf207bec34c949cd465619460102cf4a5cc95f19
+[0m08:32:00.520111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9719d302-1f52-4a9b-98a6-b0e2829f2b28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a86ec3a0>]}
+[0m08:32:06.566851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9719d302-1f52-4a9b-98a6-b0e2829f2b28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19f5a1ae0>]}
+[0m08:32:06.623877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9719d302-1f52-4a9b-98a6-b0e2829f2b28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19f5a1e40>]}
+[0m08:32:06.626690 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m08:32:06.638754 [info ] [MainThread]: 
+[0m08:32:06.652221 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:32:06.659430 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_promptmebebe'
+[0m08:32:06.662637 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:32:08.953632 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_promptmebebe, now list_promptmebebe_dbt_dev_education_stats)
+[0m08:32:08.957035 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:32:11.002127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9719d302-1f52-4a9b-98a6-b0e2829f2b28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19f5a1d20>]}
+[0m08:32:11.008283 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m08:32:11.022036 [info ] [MainThread]: 
+[0m08:32:11.053526 [debug] [Thread-37 ]: Began running node model.education_statistics.test
+[0m08:32:11.057661 [info ] [Thread-37 ]: 1 of 1 START sql view model dbt_dev_education_stats.test ....................... [RUN]
+[0m08:32:11.071241 [debug] [Thread-37 ]: Re-using an available connection from the pool (formerly list_promptmebebe_dbt_dev_education_stats, now model.education_statistics.test)
+[0m08:32:11.084257 [debug] [Thread-37 ]: Began compiling node model.education_statistics.test
+[0m08:32:11.123808 [debug] [Thread-37 ]: Writing injected SQL for node "model.education_statistics.test"
+[0m08:32:11.128985 [debug] [Thread-37 ]: Timing info for model.education_statistics.test (compile): 08:32:11.086554 => 08:32:11.126888
+[0m08:32:11.132471 [debug] [Thread-37 ]: Began executing node model.education_statistics.test
+[0m08:32:11.159799 [debug] [Thread-37 ]: Writing runtime sql for node "model.education_statistics.test"
+[0m08:32:11.164250 [debug] [Thread-37 ]: Opening a new connection, currently in state closed
+[0m08:32:11.331971 [debug] [Thread-37 ]: On model.education_statistics.test: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "default", "target_name": "dev", "node_id": "model.education_statistics.test"} */
+
+
+  create or replace view `promptmebebe`.`dbt_dev_education_stats`.`test`
+  OPTIONS()
+  as select * from `promptmebebe`.`education_statistics`.`education_data` limit 100;
+
+
+[0m08:32:13.149964 [debug] [Thread-37 ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=promptmebebe&j=bq:US:dddf3918-e461-4b4b-8352-c515a2904152&page=queryresults
+[0m08:32:14.207578 [debug] [Thread-37 ]: Timing info for model.education_statistics.test (execute): 08:32:11.134549 => 08:32:14.206097
+[0m08:32:14.211826 [debug] [Thread-37 ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9719d302-1f52-4a9b-98a6-b0e2829f2b28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19f53bd90>]}
+[0m08:32:14.215782 [info ] [Thread-37 ]: 1 of 1 OK created sql view model dbt_dev_education_stats.test .................. [[32mCREATE VIEW (0 processed)[0m in 3.14s]
+[0m08:32:14.225241 [debug] [Thread-37 ]: Finished running node model.education_statistics.test
+[0m08:32:14.239837 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:32:14.243750 [debug] [MainThread]: Connection 'model.education_statistics.test' was properly closed.
+[0m08:32:14.247072 [info ] [MainThread]: 
+[0m08:32:14.255867 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.60 seconds (7.60s).
+[0m08:32:14.269372 [debug] [MainThread]: Command end result
+[0m08:32:14.324266 [info ] [MainThread]: 
+[0m08:32:14.330949 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:32:14.339097 [info ] [MainThread]: 
+[0m08:32:14.351559 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m08:32:14.363543 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 14.170583, "process_user_time": 90.583755, "process_kernel_time": 11.499247, "process_mem_max_rss": "400564", "process_in_blocks": "64160", "process_out_blocks": "15488"}
+[0m08:32:14.371026 [debug] [MainThread]: Command `cli build` succeeded at 08:32:14.369565 after 14.18 seconds
+[0m08:32:14.374408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8160df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a81e52d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a80c9060>]}
+[0m08:32:14.378180 [debug] [MainThread]: Flushing usage events
+[0m08:32:15.940256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8160a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08972b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19ff55420>]}
+
+
+============================== 08:32:15.942320 | 6556f38c-5238-47c0-8d75-89b4227ac0d7 ==============================
+[0m08:32:15.942320 [info ] [MainThread]: Running with dbt=1.7.4
+[0m08:32:15.951914 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/src/education_statistics/dbt/logs', 'debug': 'False', 'profiles_dir': '/home/src/education_statistics/.profiles_interpolated_temp_2dde963a-3d90-46f7-862b-db3f0d689e81', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt -f /tmp/tmppfo045rv.json', 'send_anonymous_usage_stats': 'True'}
+[0m08:32:16.144314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6556f38c-5238-47c0-8d75-89b4227ac0d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a80c9ab0>]}
+[0m08:32:16.152823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6556f38c-5238-47c0-8d75-89b4227ac0d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1a8160eb0>]}
+[0m08:32:16.155307 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m08:32:16.200121 [debug] [MainThread]: checksum: 9f6af2ab1c5da8ade253fe5b6dd6c033eae90c8a915432c98e9b50125197993e, vars: {'block_uuid': 'dbt/models/staging/test',
+ 'configuration': {'dbt_project_name': 'dbt',
+                   'file_path': 'dbt/models/staging/test.sql',
+                   'file_source': {'path': 'dbt/models/staging/test.sql',
+                                   'project_path': 'dbt'},
+                   'limit': 1000},
+ 'context': {},
+ 'env': 'dev',
+ 'event': {},
+ 'execution_date': '2024-08-27T08:31:59.856793',
+ 'interval_end_datetime': '2024-08-28T08:31:59.856793',
+ 'interval_start_datetime': '2024-08-27T08:31:59.856793',
+ 'pipeline_uuid': 'create_dbt_views',
+ 'repo_path': '/home/src/education_statistics'}, profile: , target: , version: 1.7.4
+[0m08:32:16.341368 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:32:16.342972 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:32:16.373919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6556f38c-5238-47c0-8d75-89b4227ac0d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19e1540d0>]}
+[0m08:32:16.426261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6556f38c-5238-47c0-8d75-89b4227ac0d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19e13d1b0>]}
+[0m08:32:16.428332 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m08:32:16.438220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6556f38c-5238-47c0-8d75-89b4227ac0d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19e13cf70>]}
+[0m08:32:16.441705 [info ] [MainThread]: 
+[0m08:32:16.455336 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:32:16.460584 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_promptmebebe_dbt_dev_education_stats'
+[0m08:32:16.462625 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:32:18.375413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6556f38c-5238-47c0-8d75-89b4227ac0d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19e13c640>]}
+[0m08:32:18.382252 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m08:32:18.392107 [info ] [MainThread]: 
+[0m08:32:18.418930 [debug] [Thread-44 ]: Began running node model.education_statistics.test
+[0m08:32:18.426341 [debug] [Thread-44 ]: Re-using an available connection from the pool (formerly list_promptmebebe_dbt_dev_education_stats, now model.education_statistics.test)
+[0m08:32:18.429960 [debug] [Thread-44 ]: Began compiling node model.education_statistics.test
+[0m08:32:18.447256 [debug] [Thread-44 ]: Writing injected SQL for node "model.education_statistics.test"
+[0m08:32:18.451081 [debug] [Thread-44 ]: Timing info for model.education_statistics.test (compile): 08:32:18.432341 => 08:32:18.449162
+[0m08:32:18.453549 [debug] [Thread-44 ]: Began executing node model.education_statistics.test
+[0m08:32:18.475070 [debug] [Thread-44 ]: Opening a new connection, currently in state closed
+[0m08:32:18.644980 [debug] [Thread-44 ]: On model.education_statistics.test: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "default", "target_name": "dev", "node_id": "model.education_statistics.test"} */
+
+  
+    select *
+    from (
+        select * from `promptmebebe`.`education_statistics`.`education_data` limit 100
+    ) as model_limit_subq
+    limit 1000
+
+
+[0m08:32:20.721533 [debug] [Thread-44 ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=promptmebebe&j=bq:US:acba4903-4f55-4478-8e13-2bdabd2e75ca&page=queryresults
+[0m08:32:22.407060 [debug] [Thread-44 ]: Timing info for model.education_statistics.test (execute): 08:32:18.454782 => 08:32:22.404201
+[0m08:32:22.416628 [debug] [Thread-44 ]: Finished running node model.education_statistics.test
+[0m08:32:22.425369 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:32:22.428451 [debug] [MainThread]: Connection 'model.education_statistics.test' was properly closed.
+[0m08:32:22.436416 [debug] [MainThread]: Command end result
+[0m08:32:22.547451 [info ] [MainThread]: Previewing node 'test':
+| country_code | short_name           | table_name           | long_name            | 2_alpha_code | currency_unit        | ... |
+| ------------ | -------------------- | -------------------- | -------------------- | ------------ | -------------------- | --- |
+| ARB          | Arab World           | Arab World           | Arab World           | 1A           |                      | ... |
+| EAP          | East Asia & Pacif... | East Asia & Pacific  | East Asia & Pacif... | 4E           |                      | ... |
+| EAS          | East Asia & Pacif... | East Asia & Pacif... | East Asia & Pacif... | Z4           |                      | ... |
+| ECA          | Europe & Central ... | Europe & Central ... | Europe & Central ... | 7E           |                      | ... |
+| ECS          | Europe & Central ... | Europe & Central ... | Europe & Central ... | Z7           |                      | ... |
+| EMU          | Euro area            | Euro area            | Euro area            | XC           |                      | ... |
+| EUU          | European Union       | European Union       | European Union       | EU           |                      | ... |
+| GIB          | Gibraltar            | Gibraltar            | Gibraltar            | GI           | Gibraltar pound      | ... |
+| HIC          | High income          | High income          | High income          | XD           |                      | ... |
+| HPC          | Heavily indebted ... | Heavily indebted ... | Heavily indebted ... | XE           |                      | ... |
+| LAC          | Latin America & C... | Latin America & C... | Latin America & C... | XJ           |                      | ... |
+| LCN          | Latin America & C... | Latin America & C... | Latin America & C... | ZJ           |                      | ... |
+| LDC          | Least developed c... | Least developed c... | Least developed c... | XL           |                      | ... |
+| LIC          | Low income           | Low income           | Low income           | XM           |                      | ... |
+| LMC          | Lower middle income  | Lower middle income  | Lower middle income  | XN           |                      | ... |
+| LMY          | Low & middle income  | Low & middle income  | Low & middle income  | XO           |                      | ... |
+| MEA          | Middle East & Nor... | Middle East & Nor... | Middle East & Nor... | ZQ           |                      | ... |
+| MIC          | Middle income        | Middle income        | Middle income        | XP           |                      | ... |
+| MNA          | Middle East & Nor... | Middle East & Nor... | Middle East & Nor... | XQ           |                      | ... |
+| NAC          | North America        | North America        | North America        | XU           |                      | ... |
+| NRU          | Nauru                | Nauru                | Nauru                | NR           |                      | ... |
+| OED          | OECD members         | OECD members         | OECD members         | OE           |                      | ... |
+| SAS          | South Asia           | South Asia           | South Asia           | 8S           |                      | ... |
+| SSA          | Sub-Saharan Afric... | Sub-Saharan Africa   | Sub-Saharan Afric... | ZF           |                      | ... |
+| SSF          | Sub-Saharan Afric... | Sub-Saharan Afric... | Sub-Saharan Afric... | ZG           |                      | ... |
+| UMC          | Upper middle income  | Upper middle income  | Upper middle income  | XT           |                      | ... |
+| WLD          | World                | World                | World                | 1W           |                      | ... |
+| AFG          | Afghanistan          | Afghanistan          | Islamic State of ... | AF           | Afghan afghani       | ... |
+| ERI          | Eritrea              | Eritrea              | State of Eritrea     | ER           | Eritrean nakfa       | ... |
+| HTI          | Haiti                | Haiti                | Republic of Haiti    | HT           | Haitian gourde       | ... |
+| MMR          | Myanmar              | Myanmar              | Republic of the U... | MM           | Myanmar kyat         | ... |
+| PRK          | Dem. People's Rep... | Korea, Dem. Rep.     | Democratic People... | KP           | Democratic People... | ... |
+| SOM          | Somalia              | Somalia              | Somali Democratic... | SO           | Somali shilling      | ... |
+| FSM          | Micronesia           | Micronesia, Fed. ... | Federated States ... | FM           | U.S. dollar          | ... |
+| GTM          | Guatemala            | Guatemala            | Republic of Guate... | GT           | Guatemalan quetzal   | ... |
+| GUY          | Guyana               | Guyana               | Co-operative Repu... | GY           | Guyana dollar        | ... |
+| HND          | Honduras             | Honduras             | Republic of Honduras | HN           | Honduran lempira     | ... |
+| KIR          | Kiribati             | Kiribati             | Republic of Kiribati | KI           | Australian dollar    | ... |
+| NIC          | Nicaragua            | Nicaragua            | Republic of Nicar... | NI           | Nicaraguan gold c... | ... |
+| PNG          | Papua New Guinea     | Papua New Guinea     | The Independent S... | PG           | Papua New Guinea ... | ... |
+| PSE          | West Bank and Gaza   | West Bank and Gaza   | West Bank and Gaza   | PS           | Israeli new shekel   | ... |
+| SLB          | Solomon Islands      | Solomon Islands      | Solomon Islands      | SB           | Solomon Islands d... | ... |
+| SLV          | El Salvador          | El Salvador          | Republic of El Sa... | SV           | U.S. dollar          | ... |
+| SSD          | South Sudan          | South Sudan          | Republic of South... | SS           | South Sudanese Pound | ... |
+| TLS          | Timor-Leste          | Timor-Leste          | Democratic Republ... | TL           | U.S. dollar          | ... |
+| UZB          | Uzbekistan           | Uzbekistan           | Republic of Uzbek... | UZ           | Uzbek sum            | ... |
+| VUT          | Vanuatu              | Vanuatu              | Republic of Vanuatu  | VU           | Vanuatu vatu         | ... |
+| WSM          | Samoa                | Samoa                | Samoa                | WS           | Samoan tala          | ... |
+| XKX          | Kosovo               | Kosovo               | Republic of Kosovo   |              | Euro                 | ... |
+| ASM          | American Samoa       | American Samoa       | American Samoa       | AS           | U.S. dollar          | ... |
+| BLZ          | Belize               | Belize               | Belize               | BZ           | Belize dollar        | ... |
+| CRI          | Costa Rica           | Costa Rica           | Republic of Costa... | CR           | Costa Rican colon    | ... |
+| CUB          | Cuba                 | Cuba                 | Republic of Cuba     | CU           | Cuban peso           | ... |
+| DMA          | Dominica             | Dominica             | Commonwealth of D... | DM           | East Caribbean do... | ... |
+| DOM          | Dominican Republic   | Dominican Republic   | Dominican Republic   | DO           | Dominican peso       | ... |
+| DZA          | Algeria              | Algeria              | People's Democrat... | DZ           | Algerian dinar       | ... |
+| GRD          | Grenada              | Grenada              | Grenada              | GD           | East Caribbean do... | ... |
+| JAM          | Jamaica              | Jamaica              | Jamaica              | JM           | Jamaican dollar      | ... |
+| LBY          | Libya                | Libya                | Socialist People'... | LY           | Libyan dinar         | ... |
+| LCA          | St. Lucia            | St. Lucia            | St. Lucia            | LC           | East Caribbean do... | ... |
+| MHL          | Marshall Islands     | Marshall Islands     | Republic of the M... | MH           | U.S. dollar          | ... |
+| PAN          | Panama               | Panama               | Republic of Panama   | PA           | Panamanian balboa    | ... |
+| PLW          | Palau                | Palau                | Republic of Palau    | PW           | U.S. dollar          | ... |
+| SUR          | Suriname             | Suriname             | Republic of Suriname | SR           | Suriname dollar      | ... |
+| SYC          | Seychelles           | Seychelles           | Republic of Seych... | SC           | Seychelles rupee     | ... |
+| TKM          | Turkmenistan         | Turkmenistan         | Turkmenistan         | TM           | New Turkmen manat    | ... |
+| TON          | Tonga                | Tonga                | Kingdom of Tonga     | TO           | Tongan pa'anga       | ... |
+| TUV          | Tuvalu               | Tuvalu               | Tuvalu               | TV           | Australian dollar    | ... |
+| VCT          | St. Vincent and t... | St. Vincent and t... | St. Vincent and t... | VC           | East Caribbean do... | ... |
+| ABW          | Aruba                | Aruba                | Aruba                | AW           | Aruban florin        | ... |
+| AND          | Andorra              | Andorra              | Principality of A... | AD           | Euro                 | ... |
+| ARE          | United Arab Emirates | United Arab Emirates | United Arab Emirates | AE           | U.A.E. dirham        | ... |
+| ATG          | Antigua and Barbuda  | Antigua and Barbuda  | Antigua and Barbuda  | AG           | East Caribbean do... | ... |
+| BHS          | The Bahamas          | Bahamas, The         | Commonwealth of T... | BS           | Bahamian dollar      | ... |
+| BMU          | Bermuda              | Bermuda              | The Bermudas         | BM           | Bermuda dollar       | ... |
+| BRB          | Barbados             | Barbados             | Barbados             | BB           | Barbados dollar      | ... |
+| CHI          | Channel Islands      | Channel Islands      | Channel Islands      |              | Pound sterling       | ... |
+| CUW          | Curaçao              | Curaçao              | Curaçao              | CW           | Netherlands Antil... | ... |
+| CYM          | Cayman Islands       | Cayman Islands       | Cayman Islands       | KY           | Cayman Islands do... | ... |
+| FRO          | Faeroe Islands       | Faeroe Islands       | Faeroe Islands       | FO           | Danish krone         | ... |
+| GRL          | Greenland            | Greenland            | Greenland            | GL           | Danish krone         | ... |
+| GUM          | Guam                 | Guam                 | Guam                 | GU           | U.S. dollar          | ... |
+| IMN          | Isle of Man          | Isle of Man          | Isle of Man          | IM           | Pound sterling       | ... |
+| KNA          | St. Kitts and Nevis  | St. Kitts and Nevis  | St. Kitts and Nevis  | KN           | East Caribbean do... | ... |
+| LIE          | Liechtenstein        | Liechtenstein        | Principality of L... | LI           | Swiss franc          | ... |
+| MAF          | St. Martin (Frenc... | St. Martin (Frenc... | St. Martin (Frenc... | MF           | Euro                 | ... |
+| MCO          | Monaco               | Monaco               | Principality of M... | MC           | Euro                 | ... |
+| MNP          | Northern Mariana ... | Northern Mariana ... | Commonwealth of t... | MP           | U.S. dollar          | ... |
+| NCL          | New Caledonia        | New Caledonia        | New Caledonia        | NC           | CFP franc            | ... |
+| PRI          | Puerto Rico          | Puerto Rico          | Puerto Rico          | PR           | U.S. dollar          | ... |
+| PYF          | French Polynesia     | French Polynesia     | French Polynesia     | PF           | CFP franc            | ... |
+| SMR          | San Marino           | San Marino           | Republic of San M... | SM           | Euro                 | ... |
+| SXM          | Sint Maarten (Dut... | Sint Maarten (Dut... | Sint Maarten (Dut... | SX           | Netherlands Antil... | ... |
+| TCA          | Turks and Caicos ... | Turks and Caicos ... | Turks and Caicos ... | TC           | U.S. dollar          | ... |
+| TTO          | Trinidad and Tobago  | Trinidad and Tobago  | Republic of Trini... | TT           | Trinidad and Toba... | ... |
+| VIR          | Virgin Islands       | Virgin Islands (U... | Virgin Islands of... | VI           | U.S. dollar          | ... |
+| BDI          | Burundi              | Burundi              | Republic of Burundi  | BI           | Burundi franc        | ... |
+| BEN          | Benin                | Benin                | Republic of Benin    | BJ           | CFA franc            | ... |
+| BFA          | Burkina Faso         | Burkina Faso         | Burkina Faso         | BF           | CFA franc            | ... |
+| BGD          | Bangladesh           | Bangladesh           | People's Republic... | BD           | Bangladeshi taka     | ... |
+
+[0m08:32:22.568910 [debug] [MainThread]: Resource report: {"command_name": "show", "command_success": true, "command_wall_clock_time": 6.634146, "process_user_time": 92.7363, "process_kernel_time": 11.705113, "process_mem_max_rss": "403508", "process_in_blocks": "64160", "process_out_blocks": "17288"}
+[0m08:32:22.573327 [debug] [MainThread]: Command `cli show` succeeded at 08:32:22.572163 after 6.64 seconds
+[0m08:32:22.576875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b1b08972b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19e143a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b19e1436d0>]}
+[0m08:32:22.580251 [debug] [MainThread]: Flushing usage events

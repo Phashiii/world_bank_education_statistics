@@ -1,0 +1,1 @@
+select * from {{source('staging', 'education_data')}} limit 100

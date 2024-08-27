@@ -1,0 +1,26 @@
+default:
+  outputs:
+    dev:
+      dataset: dbt_dev_education_stats
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: service-account
+      priority: interactive
+      project: promptmebebe
+      threads: 4
+      keyfile: /home/src/key.json
+      type: bigquery
+
+    prod:
+      dataset: dbt_education_production_dataset
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: service-account
+      priority: interactive
+      project: promptmebebe
+      threads: 4
+      keyfile: /home/src/key.json
+      type: bigquery
+  target: dev

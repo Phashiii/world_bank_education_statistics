@@ -1,0 +1,1 @@
+select * from `promptmebebe`.`education_statistics`.`education_data` limit 100
